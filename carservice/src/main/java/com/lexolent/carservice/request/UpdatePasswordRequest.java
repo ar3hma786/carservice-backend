@@ -10,5 +10,9 @@ import lombok.NoArgsConstructor;
 public class UpdatePasswordRequest {
 	
 	private String email;
+	
+	private String newPassword;
+	
+	private String confirmPassword;
 
 }

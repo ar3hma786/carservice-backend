@@ -60,11 +60,7 @@ public class UserServiceImpl implements UserService{
 		return userRepository.findAll();
 	}
 	
-	@Override
-    public User updatePassword(User user, String newPassword) {
-        user.setPassword(passwordEncoder.encode(newPassword));
-        return userRepository.save(user);
-    }
+	
 
 	@Override
 	public User findUserByEmail(String username) throws UserException {
